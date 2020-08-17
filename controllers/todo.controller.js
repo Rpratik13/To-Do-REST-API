@@ -69,11 +69,12 @@ ROUTER.route('/add')
     else {
       let sqlQuery = 'INSERT INTO todos SET ?';
       let todo = {
-        deadline_date  : '12/12/2012',
+        deadline_date  : '2012-12-12',
         deadline_time  : '12:12',
         status         : 'remaining',
         title          : req.body.task,
-        username       : req.username
+        username       : req.username,
+        deleted        : 0,
       };
 
       CONFIG.db.query(sqlQuery, todo, function(err, result) {

@@ -6,7 +6,11 @@
   "author": "Pratik Rajbhandari",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "dependencies": {
     "bcrypt": "^5.0.0",

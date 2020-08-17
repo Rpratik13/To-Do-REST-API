@@ -1,9 +1,11 @@
 const MY_SQL  = require('mysql');
 
 const DB = MY_SQL.createConnection({
-  database : 'nodemysql',
-  host     : 'localhost',
-  user     : 'root',
+  database : 'POTbVBDBLO',
+  host     : 'remotemysql.com',
+  user     : 'POTbVBDBLO',
+  password : 'BLcIgeSXav',
+  port     : 3306
 });
 
 const STATUS = {

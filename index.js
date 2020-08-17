@@ -44,6 +44,6 @@ APP.use(function(err, req, res, next) {
   });
 });
 
-APP.listen(CONFIG.port, function() {
+APP.listen((process.env.PORT || CONFIG.port), function() {
   console.log(`Server listening at port ${CONFIG.port}`);
 });
